@@ -148,7 +148,11 @@ p "reverse_left_arr: #{$reverse_left_arr}"
       # @end_point = @start_point + 3
     end
 end
-$result = $left_result.concat($mid_result)
+if $loop_number != 0 && $remainter == 0
+  $result = $mid_result
+else
+  $result = $left_result.concat($mid_result)
+end
 p "$result: #{$result}"
 
 
